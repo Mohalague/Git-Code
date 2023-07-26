@@ -1,0 +1,246 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Hanken Grotesk', sans-serif;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container{
+  width: 90%;
+  height: 90%;
+  background-color: rgb(241, 241, 241);
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/*---------------start left section----------------  */
+.container .left_section{
+  width: 450px;
+  height: 500px;
+  background-color: #7f53ac;
+  background-image:linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 12px rgb(114, 114, 114);
+}
+
+.container .left_section .card_title{
+  color: rgb(203, 203, 203);
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 30px;
+
+}
+
+/*start statistic circle----------------- */
+
+.container .left_section .circle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 45px;
+  background-image:linear-gradient(330deg, #7f53ac 0%, #647dee 74%);
+  /* background: linear-gradient(to top, #8E2DE2 30px, #4A00E0 100%); */
+  cursor: pointer;
+}
+
+.container .left_section .circle h3{
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.container .left_section .circle p{
+  font-size:18px;
+  color: rgb(203, 203, 203);
+}
+
+.container .left_section h2{
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.container .left_section .desc{
+  width: 65%;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/*end statistic circle------------------  */
+/*---------------- end left section---------------------  */
+
+/* ----------------start right section------------------- */
+
+.container .right_section{
+  width: 450px;
+  height: 500px;
+  /* border: 1px solid gray; */
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 25px;
+  margin-left: 20px;
+}
+
+.container .right_section h3{
+  font-size: 24px;
+  color: rgb(18, 18, 18);
+}
+
+.container .right_section .box{
+  width: 100%;
+  padding: 20px;
+  background-color: #e5e5e5;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container .right_section .box .text_container img{
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.right_section .box .text_container .reaction-icon-name{
+  color: #ff5555;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+.right_section .box .text_container .memory-icon-name{
+  color: #ffb21e;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.right_section .box .text_container .verbal-icon-name{
+  color: #00bb8f;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.right_section .box .text_container .visual-icon-name{
+  color: #1125d6;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+span.static-one,
+.static-two,
+.static-three,
+.static-four {
+  color: black;
+  font-weight: 600;
+}
+
+.container .right_section button{
+  width:fit-content;
+  margin:auto;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  background-color: rgba(12, 55, 129, 0.791);
+  color: rgb(230, 230, 230);
+  outline: none;
+  border: 1px solid transparent;
+  padding: 6px 80px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.4s, border 0.4s, color 0.4s;
+}
+
+.container .right_section button:hover{
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+
+/* ----------------end right section------------------- */
+
+/*----------------- start Media Querie----------------------- */
+
+/* small devices ----------------*/
+
+@media screen and (max-width:575px){
+  .container{
+    width: 90%;
+    height: 90%;
+    background-color: transparent;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .container .left_section{
+    width: 450px;
+    height: 500px;
+    background-color: #7f53ac;
+    background-image:linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* box-shadow: 0px 0px 12px rgb(114, 114, 114); */
+  }
+
+  .container .left_section .circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 174px;
+    height: 200px;
+    margin-bottom: 45px;
+    background-image:linear-gradient(330deg, #7f53ac 0%, #647dee 74%);
+    cursor: pointer;
+}
+
+}
+
+
+/* Medium Devices -----------------*/
+
+.container{
+  width: 90%;
+  height: 90%;
+  background-color: transparent;
+  padding: 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+/*----------------- end Media Querie----------------------- */
